@@ -21,8 +21,8 @@ function submitHandler(event) {
     }, Number(delayValue));
   })
     .then(value => showSuccesMessage(value))
-        .catch(error => showErrorMessage(error));
-    form.reset();
+    .catch(error => showErrorMessage(error));
+  form.reset();
 }
 
 function showSuccesMessage(value) {
@@ -48,7 +48,7 @@ function showSuccesMessage(value) {
 
 function showErrorMessage(error) {
   iziToast.error({
-   title: 'Error',
+    title: 'Error',
     titleColor: '#fff',
     iconColor: '#fff',
     backgroundColor: '#ef4040',
