@@ -27,7 +27,12 @@ function submitHandler(event) {
 
 function showSuccesMessage(value) {
   iziToast.success({
-    title: '',
+    title: 'OK',
+    titleColor: '#fff',
+    iconColor: '#fff',
+    backgroundColor: '#59a10d',
+    messageColor: '#fff',
+    iconUrl: '/img/success-icon.svg',
     message: value,
     position: 'topRight',
     timeout: 3000,
@@ -43,7 +48,12 @@ function showSuccesMessage(value) {
 
 function showErrorMessage(error) {
   iziToast.error({
-    title: '',
+   title: 'Error',
+    titleColor: '#fff',
+    iconColor: '#fff',
+    backgroundColor: '#ef4040',
+    messageColor: '#fff',
+    iconUrl: '/img/error-icon.svg',
     message: error,
     position: 'topRight',
     timeout: 3000,
