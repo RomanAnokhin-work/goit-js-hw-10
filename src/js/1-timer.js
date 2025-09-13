@@ -22,12 +22,8 @@ const options = {
     userSelectedDate = selectedDates[0];
     startBtn.disabled = false;
       if (userSelectedDate <= Date.now()) {
-        startBtn.disabled = true;
-      iziToast.error({
-        title: '',
-        message: 'Please choose a date in the future',
-        position: 'topLeft',
-      });
+          startBtn.disabled = true;
+          showInputError();
     }
   },
 };
@@ -92,6 +88,23 @@ function updateTimer({ days, hours, minutes, seconds }) {
   timerHours.textContent = addLeadingZero(hours);
   timerMinutes.textContent = addLeadingZero(minutes);
   timerSeconds.textContent = addLeadingZero(seconds);
+}
+
+function showInputError() {
+
+  iziToast.error({
+    title: '',
+    message: 'Please choose a date in the future',
+    position: 'topRight', 
+    timeout: 3000,
+    close: false,
+    onOpening: function (instance, toast) {
+       toast.style.position = 'absolute';
+      toast.style.left = 982 + 'px';  
+      toast.style.top = 172 + 'px';  
+        toast.style.margin = 0;
+    },
+  });
 }
 
 startBtn.addEventListener('click', startTimer);
