@@ -98,7 +98,7 @@ function showInputError() {
     iconColor: '#fff',
     backgroundColor: '#ef4040',
     messageColor: '#fff',
-    iconUrl: './img/error-icon.svg',
+    iconUrl: '/src/public/img/error-icon.svg',
     message: 'Please choose a date in the future',
     position: 'topRight', 
     timeout: 3000,
