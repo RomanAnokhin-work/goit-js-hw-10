@@ -93,7 +93,12 @@ function updateTimer({ days, hours, minutes, seconds }) {
 function showInputError() {
 
   iziToast.error({
-    title: '',
+    title: 'Error',
+    titleColor: '#fff',
+    iconColor: '#fff',
+    backgroundColor: '#ef4040',
+    messageColor: '#fff',
+    iconUrl: '/src/img/error-icon.svg',
     message: 'Please choose a date in the future',
     position: 'topRight', 
     timeout: 3000,
