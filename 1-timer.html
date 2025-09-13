@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/styles-DD3qoKza.js"></script>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-4re2sZo0.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-DvPDDfy5.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-BArvkMiJ.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/styles-1SZpTiO-.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbSUbo7J.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-BH8uHgzP.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-C1gPI-5C.css">
   </head>
   <body>
     <header class="header">
@@ -21,10 +22,10 @@
       </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link active" href="/src/1-timer.html">Timer</a>
+          <a class="nav-link active" href="./1-timer.html">Timer</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="/src/2-snackbar.html">Snackbar</a>
+          <a class="nav-link {=$highlight-curr}" href="./2-snackbar.html">Snackbar</a>
         </li>
       </ul>
     </nav>
@@ -33,33 +34,28 @@
 
 
     <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to Timer
-        </h1>
+      <div class="input-container">
         <input type="text" id="datetime-picker" />
-        <button type="button" data-start>Start</button>
+        <button type="button" class ="start-button" data-start>Start</button>
+      </div>
 
-        <div class="timer">
-          <div class="field">
-            <span class="value" data-days>00</span>
-            <span class="label">Days</span>
-          </div>
-          <div class="field">
-            <span class="value" data-hours>00</span>
-            <span class="label">Hours</span>
-          </div>
-          <div class="field">
-            <span class="value" data-minutes>00</span>
-            <span class="label">Minutes</span>
-          </div>
-          <div class="field">
-            <span class="value" data-seconds>00</span>
-            <span class="label">Seconds</span>
-          </div>
+      <div class="timer">
+        <div class="days-field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
         </div>
-        <a class="back-link" href="./index.html">Go back</a>
-
+        <div class="hours-field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="minutes-field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="seconds-field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
       </div>
     </main>
 
